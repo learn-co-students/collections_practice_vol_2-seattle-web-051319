@@ -21,8 +21,7 @@ end
 
 def count_elements(array)
 	new_array = []
-	count = array.uniq
-	count.each do |item|
+	array.uniq.each do |item|
 		counter = 0
 		array.each do |element|
 			counter += 1 if element == item
